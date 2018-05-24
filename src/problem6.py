@@ -2,8 +2,8 @@
 Final exam, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jonathan Collins.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -75,7 +75,7 @@ And this one for n=14:
     :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: Implement and test this function.
+    # Done: Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In solving this problem,
@@ -87,6 +87,25 @@ And this one for n=14:
     #   print Xs for the spaces until you figure out where the problem is
     #   (and then change the Xs back to spaces).
     # ------------------------------------------------------------------
+    reit=1
+    for k in range(n+1):
+        for j in range(k):
+            if j == 0:
+                for l in range(n-k):
+                    print(' ',end='')
+            print((j+1) % 10,end='')
+        print(' ',end='')
+        if k != 0:
+            for i in range(reit):
+                print('*',end='')
+        reit=reit+1
+        print(' ', end='')
+        if k != 0:
+            x=n-j
+            for k in range(n-k+1):
+                print(x % 10,end='')
+                x=x-1
+        print()
 
 
 # ----------------------------------------------------------------------
