@@ -182,10 +182,10 @@ def problem1b(numbers):
     return summ
 
 
-###############################################################################
+##############################################################################
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.
-###############################################################################
+##############################################################################
 
 def print_expected_result_of_test(arguments, expected,
                                   test_results, format_string):
