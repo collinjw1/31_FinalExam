@@ -19,8 +19,8 @@ def main():
     print()
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
-    run_test_problem2a()
-    # run_test_problem2b()
+    #run_test_problem2a()
+    run_test_problem2b()
     # run_test_problem2c()
 
 
@@ -256,9 +256,20 @@ def problem2b(sequence):
       :type sequence  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    index=-1
+    bigben=0
+    for k in range(len(sequence)):
+        numnum=sequence[k]
+        if numnum < 0:
+            numnum=-numnum
+        if numnum > bigben:
+            bigben=numnum
+            index=k
+
+    return index
 
 
 def run_test_problem2c():
